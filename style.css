@@ -1,0 +1,81 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid{
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.question-name h1 {
+    background-color: rgba(255,255,255, 0.4);
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    width: calc(32.5% - 20px);
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding:10px;
+}
+
+div[data-choice-id='nerd'], div[data-choice-id='shy'], div[data-choice-id='sleepy']{
+    margin-bottom: 20px;
+}
+
+#result-map{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+.button{
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 18px;
+    background-color: #cecece;
+    font-size: 18.5px;
+}
+.button:hover{
+    background-color: #e0e0e0;
+}
+
+.description{
+    margin-top: 18px;
+    font-size: 18.5px;
+}
+
+.result{
+    margin:0px;
+    font-size: 45px;
+}
+
+@media(max-width:700px){
+    article{
+        width: 95%;
+    }
+    header div{
+        display: none;
+    }
+}
+
+@media(max-width:500px){
+    section div{
+        width: calc(49% - 20px);
+    }
+}
+
+.checked{
+    background-color: #cfe3ff;
+}
+
+.overlay{
+    background-color: #f4f4f4;
+    opacity: 0.3;
+}
